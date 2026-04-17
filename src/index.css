@@ -1,0 +1,123 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: sans-serif;
+  background: #fff;
+  color: #111;
+  font-size: 16px;
+}
+
+a { text-decoration: none; color: inherit; }
+
+.navbar {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1 { font-size: 1.8rem; margin-bottom: 1rem; }
+h2 { font-size: 1.2rem; margin: 1.5rem 0 0.5rem; }
+
+.search {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.count {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  display: block;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+
+.card img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+}
+
+.card p {
+  padding: 0.6rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.pagination {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.pagination button.active {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+.pagination button:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.status {
+  padding: 2rem;
+  text-align: center;
+  color: #666;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.back:hover { color: #111; }
+
+.detail-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin: 1rem 0;
+  display: block;
+}
+
+ul { padding-left: 1.25rem; }
+li { margin-bottom: 0.3rem; font-size: 0.95rem; }
+p { margin-bottom: 0.75rem; line-height: 1.6; }
